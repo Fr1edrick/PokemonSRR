@@ -1,0 +1,9 @@
+[build]
+  command = "ng build"
+  function = "netlify/function"
+  publish = "dist/pokemosSRR/browser"
+
+  [[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
